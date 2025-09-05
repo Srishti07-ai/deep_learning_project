@@ -1,8 +1,9 @@
 # deep_learning_project
 
 Problem Statement
-
+```
 The goal of this project is to build a Convolutional Neural Network (CNN) that classifies images as either cats 🐱 or dogs 🐶. This assignment helps understand the basics of TensorFlow, Keras, CNNs, and image classification.
+```
 
 Dataset
 
