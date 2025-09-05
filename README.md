@@ -1,17 +1,59 @@
 # deep_learning_project
 
-Problem Statement
-```
-The goal of this project is to build a Convolutional Neural Network (CNN) that classifies images as either cats 🐱 or dogs 🐶. This assignment helps understand the basics of TensorFlow, Keras, CNNs, and image classification.
-```
+# 🐶🐱 Cats vs Dogs Classifier
 
-Dataset
+A Convolutional Neural Network (CNN) built with **TensorFlow/Keras** to classify images of cats and dogs.  
+The model is trained on the [Kaggle Cats vs Dogs dataset](https://www.kaggle.com/datasets/tongpython/cat-and-dog) and achieves **~70–80% validation accuracy**.
 
-- Source: Kaggle – Cats and Dogs Dataset
-- Structure:
-    - cats/ → pictures of cats
-    - dogs/ → pictures of dogs
-- The dataset was uploaded into Google Colab and preprocessed:
-    - Resized to 128×128 pixels
-    - Normalized to values between 0–1
-    - Split into 80% training and 20% validation
+---
+
+## 📂 Dataset
+- Source: [Kaggle - Cats vs Dogs (Tongpython)](https://www.kaggle.com/datasets/tongpython/cat-and-dog)  
+- Structure after preprocessing:  
+
+- Images resized to **128×128** and pixel values normalized (0–1).  
+- Split: **80% training, 20% validation**.
+
+---
+
+## 🛠️ Tech Stack
+- Python  
+- TensorFlow / Keras  
+- NumPy  
+- Matplotlib  
+- Google Colab  
+
+---
+
+## 🧠 Model Architecture
+- **Conv2D → ReLU → BatchNormalization → MaxPooling**  
+- **Conv2D → ReLU → BatchNormalization → MaxPooling**  
+- **Conv2D → ReLU → BatchNormalization → MaxPooling**  
+- **Flatten → Dense(128, ReLU) → Dropout**  
+- **Dense(64, ReLU) → Dropout → Dense(1, Sigmoid)**  
+
+---
+
+## 🚀 Training
+- Optimizer: **Adam**  
+- Loss: **Binary Crossentropy**  
+- Metrics: **Accuracy**  
+- Epochs: **10–15**  
+
+---
+
+## 📊 Results
+- Validation Accuracy: **~70–80%**  
+- Training and validation accuracy/loss curves plotted for performance visualization.  
+
+---
+
+## ▶️ How to Run
+1. Clone this repository:  
+ ```bash
+ git clone https://github.com/your-username/cats-vs-dogs-classifier.git
+ cd cats-vs-dogs-classifier
+```
+#Install dependencies
+pip install tensorflow matplotlib numpy
+
