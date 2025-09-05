@@ -54,6 +54,6 @@ The model is trained on the [Kaggle Cats vs Dogs dataset](https://www.kaggle.com
  git clone https://github.com/your-username/cats-vs-dogs-classifier.git
  cd cats-vs-dogs-classifier
 ```
-#Install dependencies
+##Install dependencies
 pip install tensorflow matplotlib numpy
 
